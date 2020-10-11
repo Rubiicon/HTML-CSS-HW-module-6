@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+}
+
+img {
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #95e1d3;
+  font-family: 'Montserrat', sans-serif;
+  height: 50px;
+
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 0.75em;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  width: 490px;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 0.75em;
+}
+
+li {
+  position: relative;
+}
+
+li:hover {
+  color: #f38181;
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+
+li:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #f38181;
+  position: absolute;
+  bottom: -12px;
+  opacity: 0;
+}
+li:hover:after{
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  opacity: 1;
+}
+
+
+.service {
+  margin-top: 130px;
+}
+
+.tittle-1 {
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+  line-height: 0.75em;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.tittle-2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  line-height: 0.75em;
+  text-align: center;
+}
+
+.tittle-2:after {
+  content: "";
+  display: block;
+  background-color: #f38181;
+  height: 3px;
+  width: 60px;
+  margin: auto;
+  margin-top: 41px;
+}
+
+.service-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.service-item img {
+  width: 33px;
+  height: 33px;
+}
+
+.service-item {
+  display: flex;
+  width: 380px;
+}
+
+.service-item:nth-child(-n+3) {
+  margin-top: 65px;
+  margin-bottom: 93px;
+}
+
+.item-content {
+  padding: 0px 30px;
+
+}
+
+.item-tittle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.item-text {
+  font-family: 'Roboto', sans-serif;
+  color: #999999;
+  font-size: 15px;
+}
+
+.team {
+  margin-top: 95px;
+}
+
+.team-description {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.team-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.team-item {
+  text-align: center;
+}
+
+.team-backgroung {
+  margin-top: 90px;
+  background-color: #95e1d3;
+  width: 380px;
+}
+.team-img {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.team-img:hover {
+  left: -10px;
+  top: -10px;
+  transition-property: top,
+  left;
+  transition-duration: 0.2s;
+}
+
+.team-img:after {
+  content: "";
+  display: block;
+  width: 380px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to top, #eed788, #ef898a);
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.2s;
+}
+
+.team-img:hover:after {
+  opacity: 0.9;
+}
+
+.team-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  opacity: 0;
+}
+
+.team-img:hover .team-icon {
+  transition: opacity 0.2s;
+  opacity: 1;
+}
+
+.icon-img {
+  width: 55px;
+  height: 55px;
+  background-color: #fce38a;
+  margin-right: 1px;
+  position: relative;
+}
+
+.icon-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-img:hover {
+  background-color: #95e1d3;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+
+
+
+.name {
+text-transform: uppercase;
+font-size: 14px;
+color: #333333;
+margin-top: 30px;
+line-height: 0.75em;
+}
+
+.position{
+  color: #999999;
+  font-size: 15px;
+  margin-top: 16px;
+  line-height: 0.75em;
+}
+
+footer{
+  border-top: 1px solid #e5e5e5;
+  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #333333;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer span{
+  color: #f38181;
+}
+
+.subscibe{
+display: flex;
+margin-top: 10px;
+margin-bottom: 12px;
+}
+
+input{
+  border: 1px solid #e7e7e7;
+  height: 40px;
+  width: 230px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+color: #cccccc;
+  font-size: 15px;
+  font-style: italic;
+  padding-left: 12px;
+  border-right: 0;
+}
+
+button{
+  border: none;
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: white;
+}
